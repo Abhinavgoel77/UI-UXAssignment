@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petroleum Product</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      header.header-class {
+        background-color: grey;
+        color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+      }
+      section.inputdata {
+        display: flex;
+        justify-content: center;
+      }
+
+      .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .body-section {
+        font-family: monospace;
+        width: 30%;
+        text-align: left;
+        align-self: center;
+      }
+      section.signin {
+        background-image: url("public/images/1st.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        opacity: 75%;
+        display: flex;
+        justify-content: center;
+      }
+      .section2-class {
+        width: 40%;
+        align-self: center;
+        margin-top: 9rem;
+      }
+      .text-muted {
+        color: #d9edff !important;
+      }
+    </style>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header class="header-class">
+      <img
+        src="public/images/tank.png"
+        class="logo-img"
+        width="50"
+        height="50"
+      />
+
+      <div class="input-group">
+        <div class="form-outline">
+          <input
+            type="search"
+            id="form1"
+            class="form-control"
+            placeholder="Search"
+          />
+        </div>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+      <nav>
+        <ul class="myclass">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="inputdata">
+      <div class="section2-class">
+        <div class="heading">
+          <h1>Enter the Product details</h1>
+        </div>
+        <div class="form-class">
+          <form action="UIindex3.html" method="POST">
+            <div class="form-group">
+              <label for="Name"> Name :</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="brand">Brand :</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputbrand"
+                placeholder="Enter Brand"
+              />
+            </div>
+            <div class="form-group">
+              <label for="quantity"> Quantity in ltrs :</label>
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputquantity"
+                placeholder="Enter Quantity"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Stock">Stock :</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputstock"
+                placeholder="Enter Stock"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Price"> Price :</label>
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputPrice"
+                placeholder="Enter Price"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
